@@ -21,11 +21,11 @@ public class SudokuGrid {
 
     public void Print() {
         System.out.println("-----------" + "|" + "-----------" + "|" + "-----------");
-        for(int i = 0; i < 9; i = i+3) {
+        for(int i = 0; i < 9; i++) {
             for(int j = 0; j<9; j = j+3) {
                 System.out.println(" " + this.data[i][j] + " | " + this.data[i][j+1] + " | " + this.data[i][j+2] + " |" +
-                        " " + this.data[i+1][j] + " | " + this.data[i+1][j+1] + " | " + this.data[i+1][j+2] + " |" +
-                        " " + this.data[i+2][j] + " | " + this.data[i+2][j+1] + " | " + this.data[i+2][j+2] + " ");
+                        " " + this.data[i][j] + " | " + this.data[i][j+1] + " | " + this.data[i][j+2] + " |" +
+                        " " + this.data[i][j] + " | " + this.data[i][j+1] + " | " + this.data[i][j+2] + " ");
             }
             System.out.println("-----------" + "|" + "-----------" + "|" + "-----------");
         }
