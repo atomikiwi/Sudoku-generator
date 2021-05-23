@@ -4,12 +4,11 @@ import java.util.stream.IntStream;
 public class SudokuGrid {
     private int[] randomRow = {0,0,0,0,0,0,0,0,0};
     private final Random rand;
-    private int modif;
     private int[][] mainGrid;
 
     public SudokuGrid() {
         rand = new Random();
-        modif = 1;
+        int modif = 1;
         randomiseRow();
         mainGrid = new int[9][];
         for (int i = 0; i<9; i++) {
@@ -20,8 +19,6 @@ public class SudokuGrid {
                 while(index >=9) {
                     index = index - 9;
                 }
-
-
                 smallGrid[index] = num;
             }
             mainGrid[i] = smallGrid;
